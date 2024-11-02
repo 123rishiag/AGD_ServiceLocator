@@ -123,7 +123,7 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &81048207
+--- !u!1 &54755277
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -131,46 +131,42 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 81048209}
-  - component: {fileID: 81048208}
+  - component: {fileID: 54755279}
+  - component: {fileID: 54755278}
   m_Layer: 0
-  m_Name: PlayerService
+  m_Name: GameService
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &81048208
+--- !u!114 &54755278
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 81048207}
+  m_GameObject: {fileID: 54755277}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ecab4ab9556097469b1cdf5aeb9b5a3, type: 3}
+  m_Script: {fileID: 11500000, guid: 45cd223d305537646a9f608a987b9fe4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  uiService: {fileID: 1107832201}
-  mapService: {fileID: 1775323201}
-  soundService: {fileID: 1608414551}
-  playerService: {fileID: 81048208}
   playerScriptableObject: {fileID: 11400000, guid: ba423c4fbfbefa248b49a627b9e607b6, type: 2}
---- !u!4 &81048209
+--- !u!4 &54755279
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 81048207}
+  m_GameObject: {fileID: 54755277}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 298.96075, y: 215.8171, z: 1.6385403}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &338547894
 GameObject:
@@ -368,17 +364,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1107832201 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7182248005041137930, guid: 15430d56842a28843b57fd250730f142, type: 3}
-  m_PrefabInstance: {fileID: 7182248004000416899}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 583d4a8aa295a574b9c754281cc7873e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1241429277
 GameObject:
   m_ObjectHideFlags: 0
@@ -408,11 +393,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 066c2c6d53ce8574c9c0b875b3386ce6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  eventService: {fileID: 338547895}
-  uiService: {fileID: 1107832201}
-  mapService: {fileID: 1775323201}
-  soundService: {fileID: 1608414551}
-  playerService: {fileID: 81048208}
   waveScriptableObject: {fileID: 11400000, guid: 1a1805a3a12f21d4c9847d85958ab9ce, type: 2}
 --- !u!4 &1241429279
 Transform:
@@ -555,7 +535,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1608414550
 GameObject:
@@ -633,7 +613,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3fe4ed09c4de614794ae9d9ad4a2b60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  eventService: {fileID: 338547895}
   mapScriptableObject: {fileID: 11400000, guid: 412d441209954ab47a08973a630f316a, type: 2}
 --- !u!4 &1775323202
 Transform:
@@ -776,7 +755,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &7182248004000416899
 PrefabInstance:
@@ -800,7 +779,7 @@ PrefabInstance:
     - target: {fileID: 7182248005041137930, guid: 15430d56842a28843b57fd250730f142, type: 3}
       propertyPath: playerService
       value: 
-      objectReference: {fileID: 81048208}
+      objectReference: {fileID: 0}
     - target: {fileID: 7182248005041137931, guid: 15430d56842a28843b57fd250730f142, type: 3}
       propertyPath: m_Name
       value: Canvas - UI Service
