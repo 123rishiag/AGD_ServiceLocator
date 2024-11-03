@@ -16,30 +16,30 @@ Angry Monkeys is a tower defense game inspired by Bloons Tower Defense 6 (BTD6).
 
 ---
 
-## Game Mechanics
+## __Game Mechanics__
 
-### Monkey Types
+### __Monkey Types__
 Each monkey has distinct attributes for varying strategic playstyles:
 
 1. **Sharp Eye Monkey** - Moderate rotation speed (100), uses darts with moderate range (3) and moderate attack rate (0.5), costs 50, and targets only Red balloons.
 2. **Ninja Monkey** - High rotation speed (150), uses shurikens with moderate range (4) and high attack rate (0.2), costs 150, and targets Red and Blue balloons.
 3. **Sniper Monkey** - High rotation speed (150), uses bullets with long range (5) and very high attack rate (0.1), costs 300, and targets Red, Blue, and Metal balloons.
 
-### Projectile Types
+### __Projectile Types__
 Projectile types vary in speed and damage for tailored effectiveness:
 
 - **Dart** - High speed (20) with low damage (1).
 - **Shuriken** - Moderate speed (10) with moderate damage (2).
 - **Bullet** - Low speed (8) with high damage (5).
 
-### Balloon Types
+### __Balloon Types__
 Each balloon type has unique properties, including speed, damage, rewards, and the number of balloons it spawns when popped:
 
 1. **Red Balloon** - Low damage (1), low reward (5), moderate speed (3), and bursts with no additional balloons generated.
 2. **Blue Balloon** - Moderate damage (5), moderate reward (10), moderate speed (3), and bursts to release 5 Red balloons.
 3. **Metal Balloon** - High damage (50), high reward (50), low speed (1), and bursts to release 5 Blue balloons.
 
-### Waves
+### __Waves__
 The game has 9 waves with increasing difficulty:
 
 - **Wave 1**: 10 Red balloons.
@@ -54,7 +54,7 @@ The game has 9 waves with increasing difficulty:
 
 ---
 
-## Project Structure
+## __Project Structure__
 
 This project encapsulates core services under `GameService`, which manages the following services using Service Locator with Dependency Injection for modularity and flexibility:
 
@@ -68,25 +68,22 @@ This project encapsulates core services under `GameService`, which manages the f
 
 ---
 
-## Learning Outcomes
+## __Learning Outcomes__
 
-- **Design Patterns**: Practical application of Singleton, Service Locator, and Dependency Injection patterns.
-- **Object-Oriented Design**: Enhanced understanding of encapsulation and inheritance.
-- **Tower Defense Mechanics**: Gained insights into targeting, projectile firing, and balloon behavior.
-- **UI/UX Design**: Developed intuitive UI for in-game tower placements and score tracking.
-- **Event Handling**: Implemented responsive controls for smooth gameplay.
+- **Design Patterns**: Gained hands-on experience with key design patterns like Singleton, Service Locator, and Dependency Injection to manage game components effectively.
+- **Modular Architecture**: Improved understanding of modular architecture by implementing patterns that allow for flexible, decoupled components.
+- **Dependency Management**: Learned how to manage dependencies across different game services, enhancing scalability and maintainability.
+- **Service-Oriented Structure**: Developed a service-oriented structure that encapsulates different functionalities under a centralized management system (GameService) for streamlined game logic.
 
 ---
 
-## Setting Up the Project
+## __Setting Up the Project__
 
 1. **Clone the Repository**:
    ```bash
    git clone https://github.com/123rishiag/AGD_ServiceLocator.git
    ```
 2. Open the project in Unity.
-3. Ensure all scripts are correctly attached to their respective game objects.
-4. Set up the UI elements as described in the provided code.
 
 ---
 
