@@ -48,8 +48,6 @@ Angry Monkeys is a tower defense game inspired by Bloons Tower Defense 6 (BTD6).
 
 ## __Project Structure__
 
-This project encapsulates core services under `GameService`, which manages the following services using Service Locator with Dependency Injection for modularity and flexibility:
-
 - **GameService**: Coordinates and encapsulates the services below, ensuring streamlined interactions within the game.
   - **EventService**: Manages events within the game, such as map selection.
   - **MapService**: Manages game map layout and monkey placements.
