@@ -1,5 +1,6 @@
 using UnityEngine;
 using ServiceLocator.Player;
+using ServiceLocator.Main;
 
 namespace ServiceLocator.UI
 {

@@ -1,13 +1,8 @@
 using System.Collections.Generic;
 using UnityEngine;
-using System.Threading.Tasks;
 using ServiceLocator.Wave.Bloon;
-using ServiceLocator.Utilities;
-using ServiceLocator.Events;
-using ServiceLocator.UI;
-using ServiceLocator.Map;
-using ServiceLocator.Sound;
-using System.Collections;
+using System.Threading.Tasks;
+using ServiceLocator.Main;
 
 namespace ServiceLocator.Wave
 {
@@ -23,9 +18,14 @@ namespace ServiceLocator.Wave
         public WaveService(WaveScriptableObject waveScriptableObject)
         {
             this.waveScriptableObject = waveScriptableObject;
+            InitializeBloons();
+            SubscribeToEvents();
+        }
+
+        private void InitializeBloons()
+        {
             bloonPool = new BloonPool(waveScriptableObject);
             activeBloons = new List<BloonController>();
-            SubscribeToEvents();
         }
 
         private void SubscribeToEvents() => GameService.Instance.EventService.OnMapSelected.AddListener(LoadWaveDataForMap);
@@ -42,10 +42,10 @@ namespace ServiceLocator.Wave
             currentWaveId++;
             var bloonsToSpawn = GetBloonsForCurrentWave();
             var spawnPosition = GameService.Instance.MapService.GetBloonSpawnPositionForCurrentMap();
-            GameService.Instance.RunCoroutine(SpawnBloons(bloonsToSpawn, spawnPosition, 0, waveScriptableObject.SpawnRate));
+            SpawnBloons(bloonsToSpawn, spawnPosition, 0, waveScriptableObject.SpawnRate);
         }
 
-        public IEnumerator SpawnBloons(List<BloonType> bloonsToSpawn, Vector3 spawnPosition, int startingWaypointIndex, float spawnRate)
+        public async void SpawnBloons(List<BloonType> bloonsToSpawn, Vector3 spawnPosition, int startingWaypointIndex, float spawnRate)
         {
             foreach(BloonType bloonType in bloonsToSpawn)
             {
@@ -54,7 +54,7 @@ namespace ServiceLocator.Wave
                 bloon.SetWayPoints(GameService.Instance.MapService.GetWayPointsForCurrentMap(), startingWaypointIndex);
 
                 AddBloon(bloon);
-                yield return new WaitForSeconds(spawnRate);
+                await Task.Delay(Mathf.RoundToInt(spawnRate * 1000));
             }
         }
 
