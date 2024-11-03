@@ -94,14 +94,7 @@ namespace ServiceLocator.UI
             SetNextWaveButton(false);
         }
 
-        private void OnQuitButtonClicked()
-        {
-#if UNITY_EDITOR
-            UnityEditor.EditorApplication.isPlaying = false;
-#else
-    Application.Quit();
-#endif
-        }
+        private void OnQuitButtonClicked() => Application.Quit();
 
         private void OnPlayAgainButtonClicked() => SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
 

@@ -3,6 +3,7 @@ using UnityEngine;
 using ServiceLocator.Main;
 using ServiceLocator.Player;
 using ServiceLocator.Sound;
+using ServiceLocator.Utilities;
 
 namespace ServiceLocator.Wave.Bloon
 {
@@ -120,10 +121,10 @@ namespace ServiceLocator.Wave.Bloon
 
         private bool HasLayeredBloons() => bloonScriptableObject.LayeredBloons.Count > 0;
 
-        private void SpawnLayeredBloons() => waveService.SpawnBloons(bloonScriptableObject.LayeredBloons,
+        private void SpawnLayeredBloons() => CoroutineRunner.Instance.RunCoroutine(waveService.SpawnBloons(bloonScriptableObject.LayeredBloons,
                                                                                           bloonView.transform.position,
                                                                                           currentWaypointIndex,
-                                                                                          bloonScriptableObject.LayerBloonSpawnRate);
+                                                                                          bloonScriptableObject.LayerBloonSpawnRate));
 
         public BloonType GetBloonType() => bloonScriptableObject.Type;
 
