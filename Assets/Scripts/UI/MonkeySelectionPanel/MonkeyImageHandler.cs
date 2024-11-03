@@ -15,6 +15,7 @@ namespace ServiceLocator.UI
         private Sprite spriteToSet;
         private Vector2 originalAnchoredPosition;
         private Vector3 originalPosition;
+        private Canvas canvas;
 
         public void ConfigureImageHandler(Sprite spriteToSet, MonkeyCellController owner)
         {
@@ -29,14 +30,16 @@ namespace ServiceLocator.UI
             monkeyImage.sprite = spriteToSet;
             originalPosition = rectTransform.localPosition;
             originalAnchoredPosition = rectTransform.anchoredPosition;
+            canvas = GetComponentInParent<Canvas>();
         }
 
         public void OnPointerDown(PointerEventData eventData) => monkeyImage.color = new Color(1, 1, 1, 0.6f);
 
         public void OnDrag(PointerEventData eventData)
         {
-            rectTransform.anchoredPosition += eventData.delta;
-            owner.MonkeyDraggedAt(eventData.position);
+            Vector2 delta = eventData.delta / canvas.scaleFactor;
+            rectTransform.anchoredPosition += delta;
+            owner.MonkeyDraggedAt(rectTransform.position);
         }
 
         public void OnEndDrag(PointerEventData eventData)
