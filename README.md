@@ -71,7 +71,7 @@ Angry Monkeys is a tower defense game inspired by Bloons Tower Defense 6 (BTD6).
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/123rishiag/AGD_ServiceLocator.git
+   git clone https://github.com/123rishiag/Angry-Monkeys.git
    ```
 2. Open the project in Unity.
 
