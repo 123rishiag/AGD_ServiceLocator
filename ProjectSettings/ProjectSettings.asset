@@ -769,11 +769,11 @@ PlayerSettings:
   apiCompatibilityLevel: 6
   activeInputHandler: 0
   windowsGamepadBackendHint: 0
-  cloudProjectId: 
+  cloudProjectId: 11998a1d-ae7c-4f7a-b756-71298cdc1a2e
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: 
-  organizationId: 
+  projectName: Angry-Monkeys
+  organizationId: unity_jt3ua84xpgsblq
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
   playerDataPath: 
