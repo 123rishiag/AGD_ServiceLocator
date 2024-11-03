@@ -46,4 +46,9 @@ public class GameService : GenericMonoSingleton<GameService>
         PlayerService.Update();
         // No sound service update logic
     }
+
+    public void RunCoroutine(IEnumerator coroutine)
+    {
+        StartCoroutine(coroutine);
+    }
 }
