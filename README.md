@@ -1,6 +1,6 @@
 # Angry Monkeys
 
-Angry Monkeys is a tower defense game inspired by Bloons Tower Defense 6 (BTD6). The game involves strategically placing monkey towers to stop waves of enemy balloons. This project focuses on essential design patterns, with an emphasis on implementing Singleton, Service Locator, and Dependency Injection to manage game elements efficiently.
+Angry Monkeys is a tower defense game inspired by Bloons Tower Defense 6 (BTD6). The game involves strategically placing monkey towers to stop waves of enemy balloons. This project dives into essential design patterns—starting with Singleton, then moving to Service Locator, and finally Dependency Injection—to create a flexible and efficient gameplay experience.
 
 ---
 
