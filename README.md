@@ -18,39 +18,31 @@ Angry Monkeys is a tower defense game inspired by Bloons Tower Defense 6 (BTD6).
 
 ## __Game Mechanics__
 
-### __Monkey Types__
-Each monkey has distinct attributes for varying strategic playstyles:
+- **Monkey Types**: Each monkey has distinct attributes for varying strategic playstyles:
+  - **Sharp Eye Monkey** - Moderate rotation speed (100), uses darts with moderate range (3) and moderate attack rate (0.5), costs 50, and targets only Red balloons.
+  - **Ninja Monkey** - High rotation speed (150), uses shurikens with moderate range (4) and high attack rate (0.2), costs 150, and targets Red and Blue balloons.
+  - **Sniper Monkey** - High rotation speed (150), uses bullets with long range (5) and very high attack rate (0.1), costs 300, and targets Red, Blue, and Metal balloons.
 
-1. **Sharp Eye Monkey** - Moderate rotation speed (100), uses darts with moderate range (3) and moderate attack rate (0.5), costs 50, and targets only Red balloons.
-2. **Ninja Monkey** - High rotation speed (150), uses shurikens with moderate range (4) and high attack rate (0.2), costs 150, and targets Red and Blue balloons.
-3. **Sniper Monkey** - High rotation speed (150), uses bullets with long range (5) and very high attack rate (0.1), costs 300, and targets Red, Blue, and Metal balloons.
+- **Projectile Types**: Projectile types vary in speed and damage for tailored effectiveness:
+  - **Dart** - High speed (20) with low damage (1).
+  - **Shuriken** - Moderate speed (10) with moderate damage (2).
+  - **Bullet** - Low speed (8) with high damage (5).
 
-### __Projectile Types__
-Projectile types vary in speed and damage for tailored effectiveness:
+- **Balloon Types**: Each balloon type has unique properties, including speed, damage, rewards, and the number of balloons it spawns when popped:
+  - **Red Balloon** - Low damage (1), low reward (5), moderate speed (3), and bursts with no additional balloons generated.
+  - **Blue Balloon** - Moderate damage (5), moderate reward (10), moderate speed (3), and bursts to release 5 Red balloons.
+  - **Metal Balloon** - High damage (50), high reward (50), low speed (1), and bursts to release 5 Blue balloons.
 
-- **Dart** - High speed (20) with low damage (1).
-- **Shuriken** - Moderate speed (10) with moderate damage (2).
-- **Bullet** - Low speed (8) with high damage (5).
-
-### __Balloon Types__
-Each balloon type has unique properties, including speed, damage, rewards, and the number of balloons it spawns when popped:
-
-1. **Red Balloon** - Low damage (1), low reward (5), moderate speed (3), and bursts with no additional balloons generated.
-2. **Blue Balloon** - Moderate damage (5), moderate reward (10), moderate speed (3), and bursts to release 5 Red balloons.
-3. **Metal Balloon** - High damage (50), high reward (50), low speed (1), and bursts to release 5 Blue balloons.
-
-### __Waves__
-The game has 9 waves with increasing difficulty:
-
-- **Wave 1**: 10 Red balloons.
-- **Wave 2**: 4 Blue balloons.
-- **Wave 3**: 10 Blue balloons.
-- **Wave 4**: 3 Metal balloons.
-- **Wave 5**: 10 Metal balloons.
-- **Wave 6**: 15 Metal balloons.
-- **Wave 7**: 20 Metal balloons.
-- **Wave 8**: 25 Metal balloons.
-- **Wave 9**: 30 Metal balloons.
+- **Waves**: The game has 9 waves with increasing difficulty:
+  - **Wave 1**: 10 Red balloons.
+  - **Wave 2**: 4 Blue balloons.
+  - **Wave 3**: 10 Blue balloons.
+  - **Wave 4**: 3 Metal balloons.
+  - **Wave 5**: 10 Metal balloons.
+  - **Wave 6**: 15 Metal balloons.
+  - **Wave 7**: 20 Metal balloons.
+  - **Wave 8**: 25 Metal balloons.
+  - **Wave 9**: 30 Metal balloons.
 
 ---
 
